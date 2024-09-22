@@ -1,0 +1,6 @@
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/controller/TemperatureController.java
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/model/CelsiusDevice.java
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/model/FahrenheitDevice.java
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/model/FahrenheitToCelsiusAdapter.java
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/model/ITemperatureDevice.java
+/home/edisson/NetBeansProjects/Escenario02Adapter/src/main/java/est/ups/edu/ec/view/TemperatureView.java

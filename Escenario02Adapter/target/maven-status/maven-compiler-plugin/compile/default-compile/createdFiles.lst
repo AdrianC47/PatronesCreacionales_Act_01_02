@@ -1,0 +1,6 @@
+est/ups/edu/ec/controller/TemperatureController.class
+est/ups/edu/ec/model/ITemperatureDevice.class
+est/ups/edu/ec/view/TemperatureView.class
+est/ups/edu/ec/model/CelsiusDevice.class
+est/ups/edu/ec/model/FahrenheitDevice.class
+est/ups/edu/ec/model/FahrenheitToCelsiusAdapter.class
