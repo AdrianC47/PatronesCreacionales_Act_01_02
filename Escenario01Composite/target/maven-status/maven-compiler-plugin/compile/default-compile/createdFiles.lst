@@ -1,5 +1,5 @@
 est/ups/edu/ec/model/Archivo.class
-est/ups/edu/ec/controller/ControladorArchivoSistema.class
 est/ups/edu/ec/model/Carpeta.class
+est/ups/edu/ec/controller/ControladorArchivoSistema.class
 est/ups/edu/ec/view/VistaArchivoSistema.class
 est/ups/edu/ec/model/ArchivoSistema.class

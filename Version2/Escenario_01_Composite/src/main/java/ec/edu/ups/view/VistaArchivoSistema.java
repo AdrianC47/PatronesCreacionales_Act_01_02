@@ -9,6 +9,8 @@ import ec.edu.ups.model.ArchivoSistema;
 import ec.edu.ups.model.Carpeta;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -24,6 +26,7 @@ public class VistaArchivoSistema extends javax.swing.JFrame {
         List<ArchivoSistema> sistemaArchivos = new ArrayList<>();
         this.controladorArchivoSistema = new ControladorArchivoSistema(sistemaArchivos);
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
        private void agregarCarpeta() {
@@ -44,7 +47,7 @@ public class VistaArchivoSistema extends javax.swing.JFrame {
 //        }
        }
        
-              public void mostrarElemento(ArchivoSistema elemento, int nivel) {
+        public void mostrarElemento(ArchivoSistema elemento, int nivel) {
         String indentacion = " ".repeat(nivel * 2);
         System.out.println(indentacion + elemento.getNombre() + " (" + elemento.getTamano() + " KB)");
 
@@ -70,27 +73,145 @@ public class VistaArchivoSistema extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        BtnListar = new javax.swing.JToggleButton();
+        BtnAgregarDocx = new javax.swing.JToggleButton();
+        BtnSalir = new javax.swing.JToggleButton();
+        BtnAgregarXlsx = new javax.swing.JToggleButton();
+        BtnAgregarPdf = new javax.swing.JToggleButton();
+        BtnAgregarCarpeta = new javax.swing.JToggleButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(464, 300));
+        setPreferredSize(new java.awt.Dimension(464, 300));
+        setResizable(false);
+        setSize(new java.awt.Dimension(464, 300));
+        getContentPane().setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Bienvenido");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(160, 40, 100, 26);
+
+        BtnListar.setBackground(new java.awt.Color(204, 204, 255));
+        BtnListar.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
+        BtnListar.setForeground(new java.awt.Color(0, 0, 0));
+        BtnListar.setText("Listar Archivos");
+        BtnListar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(BtnListar);
+        BtnListar.setBounds(270, 150, 154, 36);
+
+        BtnAgregarDocx.setBackground(new java.awt.Color(255, 255, 204));
+        BtnAgregarDocx.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
+        BtnAgregarDocx.setForeground(new java.awt.Color(0, 0, 0));
+        BtnAgregarDocx.setText("Agregar Docx");
+        BtnAgregarDocx.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(BtnAgregarDocx);
+        BtnAgregarDocx.setBounds(20, 140, 162, 36);
+
+        BtnSalir.setBackground(new java.awt.Color(255, 102, 102));
+        BtnSalir.setFont(new java.awt.Font("FreeSans", 0, 12)); // NOI18N
+        BtnSalir.setForeground(new java.awt.Color(0, 0, 0));
+        BtnSalir.setText("Salir");
+        BtnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnSalir.setMaximumSize(new java.awt.Dimension(37, 25));
+        BtnSalir.setMinimumSize(new java.awt.Dimension(37, 25));
+        BtnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BtnSalir);
+        BtnSalir.setBounds(310, 10, 120, 36);
+
+        BtnAgregarXlsx.setBackground(new java.awt.Color(204, 255, 255));
+        BtnAgregarXlsx.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
+        BtnAgregarXlsx.setForeground(new java.awt.Color(0, 0, 0));
+        BtnAgregarXlsx.setText("Agregar Xlsx");
+        BtnAgregarXlsx.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(BtnAgregarXlsx);
+        BtnAgregarXlsx.setBounds(20, 190, 162, 36);
+
+        BtnAgregarPdf.setBackground(new java.awt.Color(255, 204, 204));
+        BtnAgregarPdf.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
+        BtnAgregarPdf.setForeground(new java.awt.Color(0, 0, 0));
+        BtnAgregarPdf.setText("Agregar Pdf");
+        BtnAgregarPdf.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnAgregarPdf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAgregarPdfActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BtnAgregarPdf);
+        BtnAgregarPdf.setBounds(20, 90, 162, 36);
+
+        BtnAgregarCarpeta.setBackground(new java.awt.Color(204, 204, 255));
+        BtnAgregarCarpeta.setFont(new java.awt.Font("FreeSans", 0, 14)); // NOI18N
+        BtnAgregarCarpeta.setForeground(new java.awt.Color(0, 0, 0));
+        BtnAgregarCarpeta.setText("Agregar Carpeta");
+        BtnAgregarCarpeta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnAgregarCarpeta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAgregarCarpetaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BtnAgregarCarpeta);
+        BtnAgregarCarpeta.setBounds(270, 90, 154, 36);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void BtnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSalirActionPerformed
+    int confirm = JOptionPane.showConfirmDialog(this, "¿Está seguro que desea salir?", "Confirmar Salida", JOptionPane.YES_NO_OPTION);
+    if (confirm == JOptionPane.YES_OPTION) {
+        System.exit(0);
+    }        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnSalirActionPerformed
+
+    private void BtnAgregarCarpetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAgregarCarpetaActionPerformed
+         // TODO add your handling code here:
+
+        AddCarpetaView addCarpetaView = new AddCarpetaView(controladorArchivoSistema);
+        addCarpetaView.setVisible(true);
+
+
+    }//GEN-LAST:event_BtnAgregarCarpetaActionPerformed
+
+    private void BtnAgregarPdfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAgregarPdfActionPerformed
+       AddCarpetaView addCarpetaView = new AddCarpetaView(controladorArchivoSistema);
+        addCarpetaView.setVisible(true);    }//GEN-LAST:event_BtnAgregarPdfActionPerformed
+
+    public static void main(String args[]) {
+        try {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception ex) {
+            // Manejo de excepciones
+            ex.printStackTrace();
+        }
+        
+         /* Crear y mostrar la interfaz */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VistaArchivoSistema().setVisible(true);
+            }
+        });
+    }
  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JToggleButton BtnAgregarCarpeta;
+    private javax.swing.JToggleButton BtnAgregarDocx;
+    private javax.swing.JToggleButton BtnAgregarPdf;
+    private javax.swing.JToggleButton BtnAgregarXlsx;
+    private javax.swing.JToggleButton BtnListar;
+    private javax.swing.JToggleButton BtnSalir;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
