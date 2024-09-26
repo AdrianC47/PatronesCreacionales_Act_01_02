@@ -10,7 +10,7 @@ Composite
 Adapter  
 Documentación  
 URL Documento: [Patrones Creacionales - Documento](https://estliveupsedu-my.sharepoint.com/:w:/g/personal/eredrovan_est_ups_edu_ec/EePyffkgMABGh3yrfdZEJAMBv2vpekH2doNFMxvqPTpCMg?rtime=zC_ALM_d3Eg)  
-Diagramas UML  [Patrones Creacionales -  Diagramas]  https://drive.google.com/file/d/1rfnm7EW5xKGxgylyFXFl2bE3755P2KyH/view   
+Diagramas UML  [Patrones Creacionales -  Diagramas] (https://drive.google.com/file/d/1rfnm7EW5xKGxgylyFXFl2bE3755P2KyH/view)
 URL Diagramas: Patrones Creacionales - Diagramas UML  
 Los diagramas UML representan las clases, relaciones y flujos de los patrones implementados en este proyecto.  
  
