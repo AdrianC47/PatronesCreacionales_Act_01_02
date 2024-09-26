@@ -17,7 +17,7 @@ import java.util.Scanner;
  */
 public class VistaArchivoSistema {
     
-     private ControladorArchivoSistema controlador;
+    /*private ControladorArchivoSistema controlador;
     private Scanner scanner;
     
     
@@ -110,5 +110,5 @@ public class VistaArchivoSistema {
         VistaArchivoSistema vista = new VistaArchivoSistema();
         vista.iniciar();
     }
-    
+*/    
 }

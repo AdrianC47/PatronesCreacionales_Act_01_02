@@ -9,6 +9,7 @@ import est.ups.edu.ec.model.Archivo;
 import est.ups.edu.ec.model.ArchivoSistema;
 import est.ups.edu.ec.model.Carpeta;
 import est.ups.edu.ec.view.VistaArchivoSistema;
+import est.ups.edu.ec.view.VistaArchivo;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,9 +20,10 @@ import java.util.List;
 public class ControladorArchivoSistema{
     
     private List<ArchivoSistema> sistemaArchivos;
-    private VistaArchivoSistema vista;
+    //private VistaArchivoSistema vista;
+    private VistaArchivo vista;
 
-    public ControladorArchivoSistema(VistaArchivoSistema vista) {
+    public ControladorArchivoSistema(VistaArchivo vista) {
         this.sistemaArchivos = new ArrayList<>();
         this.vista = vista;
     }
